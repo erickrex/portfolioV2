@@ -9,9 +9,6 @@
   margin-bottom: .25em;
 }
 
-.section__title--intro {
-  font-weight: var(--fw-reg);
-}
 
 .section__title--intro strong {
   display: block;
@@ -29,7 +26,10 @@
 .section__subtitle--intro {
   display: inline-block;
 }
-
+.intro__img {
+  display: block;
+  max-width: 100%;
+}
 
 @media (min-width: 600px) {
   .intro {
@@ -45,7 +45,8 @@
   
   .intro__img {
       grid-area: img;
-      width: 350px;
+      
+      max-width: 450px;
       
       position: relative;
       z-index: 2;
