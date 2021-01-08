@@ -23,7 +23,7 @@ function Projects() {
             <CardLeft
               src='images/GA.png'
               text='ATTENTION NSFW - adult nightlife venues directory'
-              description='Well, I am not not proud of this :). If you open it, I apologize, I have not maintained it properly as it is not generating any revenue anymore. It runs on WordPress, Open Street Maps API and JavasCript. It had 15k visitors a month at some point and still is the biggest site of its kind in the country. I could explain personally better.'
+              description='Well, I am not not proud of this :). If you open it, I apologize for its current state, I have not maintained it properly as it is not generating any revenue anymore. It runs on WordPress, the Open Street Maps API and JavaScript. It had 15k visitors a month at one point and is still the biggest site of its kind in the country. I could explain personally better.'
               label='WordPress'
               url='https://meganoche.com/'
             />
@@ -35,16 +35,16 @@ function Projects() {
               url='https://centraldeingles.com/'
             />
             <CardLeft
-              src='images/filters.jpg'
-              text='Instagram filters in Spark AR Studio'
-              description='Developed 2 instagram filters for american wrestlers using JavaScript, face tracker and eye tracker features.The filters have 2K impressions so far (01.2021).'
+              src='images/filters.png'
+              text='Instagram filters SPARK AR Studio'
+              description='Created 2 instagram filters for American wrestlers using JavaScript, the face tracker and eye tracker features from Spark AR.The filters have 2K impressions so far (01.2021).'
               label='2D Design'
               url='https://www.facebook.com/sparkarhub/portfolios/453897605624260'
             />
             <CardLeft
-              src='images/jupyter.jpg'
+              src='images/jupyter.png'
               text='LinkedIn scraper and visualization project.'
-              description='University project where 2 colleagues and me used Python and the WSL2 environment to run an automated scraper and Jupiter notebooks to visualize the results.'
+              description='University project where 2 colleagues and me used Python and the WSL2 environment to run an automate a web scraper, the data was processed in Jupyter notebooks to visualize the results.'
               label='Selenium'
               url='https://github.com/erickrex/LinkedIn-scraper/blob/main/03_Alumni.ipynb'
             />
