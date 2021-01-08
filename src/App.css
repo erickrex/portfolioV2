@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.now,
+.contact {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.now {
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.label-contact{
+  
+  padding: 2rem 0 2rem 0;
+  
+}
+.greenspace{
+  background: linear-gradient(
+    225deg
+    ,#b2de94,#0abac2);
+  height: 80vh;
+}
+.contact-form {
+  padding-top: 3rem;
+  height: 80vh;
+  background-position: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 20px;
+  width: 80%;
+}

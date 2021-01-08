@@ -1,0 +1,95 @@
+.cards {
+  padding: 1rem;
+  background: #fff;
+}
+
+.big-card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 70px 140px 0 rgba(130,136,171,.2);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+}
+
+
+.gradient-wrapper{
+  border-radius: 15px 15px 15px 15px;
+  background-image: linear-gradient(225deg,#0abac2,#b2de94);
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex: 0 0 50%;
+  min-height: auto;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  align-items: center;
+  justify-content: center
+}
+
+
+.hero-project{
+  max-width: 100%;
+  max-height: 400px;
+  position: relative;
+  z-index: 1;
+  border-style: none;
+  box-sizing: border-box
+}
+.project{
+  height: 100%;
+  justify-content: space-between;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+.project-description{
+  color:#212529
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .big-card{
+  flex-direction: row;
+  }
+  .hero-project{
+    max-width: 250px;
+  max-height: 400px;
+  }
+  
+  .big-card:nth-of-type(2n) {
+  flex-direction: row-reverse;
+  }
+
+  .gradient-wrapper{
+    width: 50%;
+  }
+}
+
+
+
