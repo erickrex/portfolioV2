@@ -15,19 +15,19 @@ function Cards() {
               src='images/img-3.jpg'
               text='JavaScript development'
               label='ReactJS'
-              path='/services'
+              
             />
             <CardItem
               src='images/img-4.jpg'
               text= 'Marketing and analytics'
               label='Jupyter Notebooks'
-              path='/products'
+              
             />
             <CardItem
               src='images/img-5.png'
               text='MVP development'
               label='WordPress'
-              path='/sign-up'
+              
             />
             
           </ul>
