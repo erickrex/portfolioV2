@@ -2,9 +2,11 @@
 .services {
     padding-top: 2rem;
     display: flex;
+    max-width: 1000px;
     flex-direction: column;
     background-size: cover;
     text-align: center;
+    justify-content: space-between;
     padding-bottom: 2rem;
 }
 h4{
@@ -18,7 +20,11 @@ h4{
     border: 3px solid green;
     text-align: center;
   }
-
+.note{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
 .section__title--services::after {
     content: '';
     

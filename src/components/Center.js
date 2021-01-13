@@ -1,13 +1,34 @@
 import React from 'react';
 import './Center.css';
-import { Button } from './Button';
+import ApiCall from './ApiCall';
+function Center() {
 
-function Projects() {
+    let hundredItems = [];
+    for (let i = 1; i<= 100; i++){
+        hundredItems.push(i);
+    }
+
+    // let newItems = hundredItems.reduce((acum, iterator) => {
+    //     if (iterator % 3 === 0 && iterator % 5 === 0) {acum.push("FIZZBUZZ");} 
+    //     else if (iterator % 3 === 0) {acum.push("fizz");}
+    //     else if (iterator % 5 === 0) {acum.push("buzz");}
+    //     else acum.push(iterator)
+    //     return acum;
+    // },[]);
+
+    // console.log(newItems);
+    
+    
+
   return (
-    <>
-        <h4 style={{paddingTop:40}}>***This portfolio is still a <a href={'https://github.com/erickrex/portfolioV2'} target={'_blank'}> work in progress. </a> The <a href={'https://docs.stackshare.io/docs/count'} target={'_blank'}> StackShare API </a> might not be working as I already surpassed the number of free requests for the month. I might hard code the json data to keep the feature running in the <a href={'/now'} target={'_blank'}> NOW </a> section</h4>
+    <>  
+        <div className='note'>    
+        <i>*This site is still a beta version, I apologize for the contact form not working and some rough CSS styling. Please email me <a href="mailto:erickrhein@gmail.com">mailto:erickrhein@gmail.com </a>
+                if you have any questions. The up to date code for this web app is available in my <a href="https://github.com/erickrex/portfolioV2">GitHub</a> and re deployed with each commit.</i>
+                </div>
         <div className="services" >
-            
+                
+                
                 <div className="service">
                     <h3>Profile</h3>
                     <div className="descripcion">
@@ -40,4 +61,4 @@ I am specializing in ReactJS and headless CMSs. I am sociable, have a structured
         );
 }
 
-export default Projects;
+export default Center;

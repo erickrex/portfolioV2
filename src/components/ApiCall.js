@@ -1,74 +1,58 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Penny from "./Penny"
-import {GRAPHQL_API, GET_TECH_QUERY} from "./Constants"
+import TechProfile from "./TechProfile"
+import {GRAPHQL_API, getQuery} from "./Constants"
+import './SearchBox.css';
 
-const ApiCall = () => {
+function ApiCall() {
   
-
-  // useEffect(() => {
-  //   axios.get(`https://jsonplaceholder.typicode.com/todos`).then((res) => {
-  //     const responseTodos = res.data;
-  //     setTodos(responseTodos);
-  //   });
-  // }, []);
-
-  // console.log(todos);
-
- console.log(GRAPHQL_API);
-
-  // axios({
-  //   url: GRAPHQL_API,
-  //   method: 'post',
-  //   headers: { 'x-api-key' : 'XXXX' },
-  //   data: {
-  //     query: GET_TECH_QUERY
-  //   }
-  // }).then((result) => {
-  //   console.log(result)
-  //   const { data } = result;
-  //   const { enrichment } = data;
-  //   // const { domain, companyId, companyName, companyTools } = enrichment;
-  //   // console.log(enrichment);
-  //   // console.log(domain);
-  // });
- 
- 
-
-
-
-
-
-// // fetch('Penny.json')
-// //   .then( res => res.json())
-//   // .then( json => {
-    
-    
-    // //const {hasNextPage, endCursor} = pageInfo;
-    // const {node} = edges
-    // json.forEach( person => {
+    const [query, setQuery] = useState('');
+    const [tech, setTech] = useState([]);
+   
+    const searchTechStack = async (e) => {
+        e.preventDefault();
           
-    //       const {street, country, province, zones} = address;
+        try {
+          
+            async function fetchData(query){
+              
+              const queryResult = await axios({
+              url: GRAPHQL_API,
+              method: 'post',
+              headers: { 'x-api-key' : process.env.REACT_APP_API_KEY },
+              data: {
+                query: getQuery(query)
+              }
+            });
+            
+            const result = queryResult.data.data;
+            setTech(result.tools.edges);
+            console.log(tech)
+            };
+            fetchData(query);
+            console.log(tech);
+        }catch(err){
+            console.log(err);
+        }
+    }
 
-    //   })
-    
-  // })
-
-
+  console.log(tech);
   return (
-    <div>
-      {/* <h1> Todo List </h1>
-      {todos &&
-        todos.map((todo) => {
-          const { id, userId, title } = todo;
-          return (
-            <div key={id}>
-              <h5> {title} </h5>
-              <h6> Assigned to user: {userId} </h6>
-            </div>
-          );
-        })} */}
-    </div>
+    <>
+     <form className="form" onSubmit={searchTechStack}>
+                <label className="label" htmlFor="query">Please insert a technology you want to explore.</label>
+                <input className="input" type="text" name="query"
+                    placeholder="Python, React, etc"
+                    value={query} onChange={(e) => setQuery(e.target.value)}
+                    />
+                <button className="button" type="submit">Search</button>
+            </form> 
+    <div className="tech_container">
+        {tech ? (tech.map(item => <TechProfile 
+            key={item.node.id} props={item}/>)) : <h1>...Loading</h1>}
+        
+        </div>     
+    </>
   );
 };
 

@@ -1,28 +1,23 @@
 export const GRAPHQL_API = 'https://api.stackshare.io/graphql';
 
 
-export const GET_TECH_QUERY = `
-{
-    enrichment(domain: "amazon.com"){
-      domain
-      companyId
-      companyName
-      companyTools {
-        count
-        pageInfo {
-          hasNextPage
-          endCursor
-        }
-        edges {
-          node {
-            tool{
-              id
-              name
-            }
-            sourcesSummary
-            sources
-          }
-        }
+export function getQuery(anyTool) {
+  return (
+  `{
+  tools(query: "${anyTool}" ) {
+    edges {
+      node {
+        name
+        title
+        slug
+        canonicalUrl
+        id
+        imageUrl
+        ossRepo
+        description
+        websiteUrl
       }
     }
-}`;
+  }
+}`)
+};
