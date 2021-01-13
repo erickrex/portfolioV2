@@ -28,12 +28,7 @@
   padding: 2rem 0 2rem 0;
   
 }
-.greenspace{
-  background: linear-gradient(
-    225deg
-    ,#b2de94,#0abac2);
-  height: 80vh;
-}
+
 .contact-form {
   padding-top: 3rem;
   height: 80vh;
