@@ -6,7 +6,6 @@ import Footer from '../Footer';
 //import CardLeft from '../CardLeft'
 import Projects from '../Projects'
 import Center from '../Center'
-import ApiCall from '../ApiCall';
 
 
 function Home() {
