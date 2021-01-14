@@ -13,7 +13,7 @@ function Projects() {
         <div >
           <ul >
             <CardLeft
-              src='images/empire.jpg'
+              src='images/empire.png'
               text='EMPIRE.de web development'
               description='Developed the website for the flagship product of the company. Empire XPU is CAD and simulation software for antenna design. I also worked on benchmarks using Python and VR software functional testing during my time at IMST.'
               label='WordPress'
