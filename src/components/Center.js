@@ -24,7 +24,7 @@ function Center() {
     <>  
         <div className='note'>    
         <i>*This site is still a beta version, I apologize for the contact form not working and some rough CSS styling. Please email me <a href="mailto:erickrhein@gmail.com">mailto:erickrhein@gmail.com </a>
-                if you have any questions. The up to date code for this web app is available in my <a href="https://github.com/erickrex/portfolioV2">GitHub</a> and re deployed with each commit.</i>
+                if you have any questions. The up to date code for this web app is available in my <a href="https://github.com/erickrex/portfolioV2">GitHub</a> and is re deployed automatically with each commit.</i>
                 </div>
         <div className="services" >
                 
