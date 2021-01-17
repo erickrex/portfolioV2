@@ -18,12 +18,10 @@ return (
                 
                 
                 <div className="service">
-                    <h3>Profile</h3>
+                    <h2>Web developer - tester - start-up founder</h2>
                     <div className="descripcion">
-                    <p>Front end web developer, tester, and start-up founder. I’ve held many roles in my 5 years in IT, always adapting to the
-organizations’ needs. I’ve built many websites and ranked them on the first pages of Google. One site reached 15k visitors
-making $700 monthly. My latest project is centraldeingles.com which is an affiliate review site of language learning apps.
-I am specializing in ReactJS and headless CMSs. I am sociable, have a structured work approach and strong analytical skills.</p>
+                    <p>I have 5 years in IT, always adapting to the
+organizations’ needs. I have worked with Python, C# and specially with WordPress. Now I am specializing in JavaScript,ReactJS and NextJS. I am sociable, have a structured work approach and strong analytical skills.</p>
                 </div>
                 </div> 
                 
