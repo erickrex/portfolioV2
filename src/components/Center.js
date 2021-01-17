@@ -8,19 +8,7 @@ function Center() {
         hundredItems.push(i);
     }
 
-    // let newItems = hundredItems.reduce((acum, iterator) => {
-    //     if (iterator % 3 === 0 && iterator % 5 === 0) {acum.push("FIZZBUZZ");} 
-    //     else if (iterator % 3 === 0) {acum.push("fizz");}
-    //     else if (iterator % 5 === 0) {acum.push("buzz");}
-    //     else acum.push(iterator)
-    //     return acum;
-    // },[]);
-
-    // console.log(newItems);
-    
-    
-
-  return (
+return (
     <>  
         <div className='note'>    
         <i>*This site is still a beta version, I apologize for the contact form not working and some rough CSS styling. Please email me <a href="mailto:erickrhein@gmail.com">mailto:erickrhein@gmail.com </a>
