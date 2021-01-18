@@ -20,7 +20,6 @@
       225deg
       ,#0abac2,#b2de94);;
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
 .section__subtitle--intro {
@@ -45,9 +44,7 @@
   
   .intro__img {
       grid-area: img;
-      
-      max-width: 450px;
-      
+      max-width: 400px;
       position: relative;
       z-index: 2;
   }    
