@@ -18,7 +18,7 @@ function Cards() {
               
             />
             <CardItem
-              src='images/img-4.jpg'
+              src='images/img-4.JPG'
               text= 'Marketing and analytics'
               label='Jupyter Notebooks'
               
