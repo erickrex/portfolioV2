@@ -6,15 +6,21 @@ import Footer from '../Footer';
 //import CardLeft from '../CardLeft'
 import Projects from '../Projects'
 import Center from '../Center'
-
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 function Home() {
+  useEffect(() => {
+    AOS.init({duration : 2000});
+
+  }, []);
+
   return (
     <>
-      <HeroSection />
+      <HeroSection/>
       <Center/>
-      <Cards />
-      <Projects/>
+      <Cards data-aos='fade-left'/>
+      <Projects data-aos="fade-up"/>
       
            
       <Footer />
