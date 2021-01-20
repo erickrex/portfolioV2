@@ -3,14 +3,11 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
    
 function CardLeft(props) {
-    useEffect(() => {
-      Aos.init({duration : 2000});
-  
-  }, []);
+
    
     return (
       <>
-      <div className='big-card' data-aos="fade-up">
+      <div className='big-card'>
           
           <div className='gradient-wrapper'>
             <a href={props.url}>    
