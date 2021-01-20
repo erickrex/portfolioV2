@@ -1,20 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from "./Button";
-
-// const CardLeft = () => {
+import React, {useEffect} from 'react';
+import Aos from "aos";
+   
+function CardLeft(props) {
+    useEffect(() => {
+      Aos.init({duration : 2000});
   
-//   const [count, setCount] = React.useState(0);
-  
-//   const estado = (num) => {
-//         setCount(count + num );
-//         console.log(count);
-//   }}
-
-  function CardLeft(props) {
-   return (
+  }, []);
+   
+    return (
       <>
-      <div className='big-card' >
+      <div className='big-card' data-aos="fade-up">
           
           <div className='gradient-wrapper'>
             <a href={props.url}>    
