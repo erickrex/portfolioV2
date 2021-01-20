@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../App.css';
 import Cards from '../Cards';
 import HeroSection from '../HeroSection';
@@ -10,7 +10,7 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 
 function Home() {
-  AOS.init();
+  
   useEffect(() => {
     AOS.init({duration : 2000});
 
