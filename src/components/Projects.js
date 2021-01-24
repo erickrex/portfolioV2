@@ -1,8 +1,17 @@
 import React from 'react';
 import './CardLeft.css';
 import CardLeft from './CardLeft';
+import AOS from 'aos';
 
 function Projects() {
+ 
+
+  useEffect(() => {
+    AOS.init({duration : 2000});
+
+  }, []);
+  
+  
   return (
     <div className='cards'>
       <h1 style={{padding:30}}>Some of the projects I built last year</h1>
