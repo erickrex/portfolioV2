@@ -1,12 +1,13 @@
 import React from "react";
 import "./CardLeft.css";
 import CardLeft from "./CardLeft";
-import AOS from "aos";
 
 function Projects() {
   return (
     <div className="cards">
-      <h1 style={{ padding: 30 }}>Some of the projects I built last year</h1>
+      <h1 style={{ padding: 30 }}>
+        Some of the projects I have built recently
+      </h1>
       <br />
       <br />
       <br />
@@ -15,18 +16,18 @@ function Projects() {
           <ul>
             <CardLeft
               data-aos="fade-up"
-              src="images/empire.png"
+              src="images/wrestling-predictions.JPG"
               text="Vue JS 3 and XState library"
-              description='Fantasy sports prediction app similar to "ESPN Pick em" where a user logs in and selects who he thinks the winner of a UFC fight will be. Wrestlingpredictions.com does the same but for wrestling matches. The front end is managed by a State Machine multi step questionnaire which can be quickly changed using a JSON object. Authentication and the backend is built with Firebase. The project was succesfully tested and had 25+ happy users.'
+              description='(IN PROGRESS 04.2021)Fantasy sports app similar to "ESPN Pick em" where a user logs in and selects who he thinks the winner of a UFC fight will be. Wrestlingpredictions.com does the same but for wrestling matches. The front end is managed by a State Machine based multi step questionnaire which can be quickly changed using a JSON object when a different PPV happens. Authentication and the backend is built with Firebase. The project was succesfully tested and had 25+ happy users.'
               label="Firebase, State Machine"
               url="https://wrestlingpredictions.com"
               target="_blank"
             />
             <CardLeft
               data-aos="fade-up"
-              src="images/GA.png"
+              src="images/logo-wpmetaverse.png"
               text="WP Metaverse"
-              description="Scraping of the tech profile of WordPress websites and organizing it in a searchable database. Built with WordPress."
+              description="(IN PROGRESS 04.2021) Scraping of over 10k tech profiles of WordPress-made websites and organizing the data in a searchable database. Built with WordPress."
               label="Web scraping"
               url="https://wpmetaverse.com"
             />
@@ -41,15 +42,15 @@ function Projects() {
             />
             <CardLeft
               data-aos="fade-up"
-              src="images/GA.png"
+              src="images/meganoche.png"
               text="ATTENTION NSFW - adult nightlife venues directory"
-              description="Well, I am not not proud of this :). If you open it, I apologize for its current state, I have not maintained it properly as it is not generating any revenue anymore. It runs on WordPress, the Open Street Maps API and JavaScript. It had 15k visitors a month at one point and is still the biggest site of its kind in the country. I could explain personally better."
+              description="Well, I am not not proud of this one :). I apologize for its current state, I have not maintained it properly as it is not generating any revenue anymore. It is an adult nightlife venues directory which runs on WordPress, the Open Street Maps API and JavaScript. It had 15k visitors a month at its peak and is still the biggest site of its kind in the country. I could explain personally better."
               label="WordPress"
               url="https://meganoche.com/"
             />
             <CardLeft
               data-aos="fade-up"
-              src="images/img-5.png"
+              src="images/centraldeingles.png"
               text="Centraldeingles.com"
               description="Affiliate review site for language learning apps that I am using myself to learn German. Developed in WordPress, HTML and CSS"
               label="WordPress"
@@ -58,8 +59,8 @@ function Projects() {
             <CardLeft
               data-aos="fade-up"
               src="images/filters.png"
-              text="Instagram filters SPARK AR Studio"
-              description="Created 2 instagram filters for American wrestlers using JavaScript, the face tracker and eye tracker features from Spark AR.The filters have 2K impressions so far (01.2021)."
+              text="Instagram filters made in SPARK AR Studio"
+              description="Created 2 instagram filters for American wrestlers using JavaScript, the face tracker and eye tracker features from Spark AR.The filters have 8K impressions so far (04.2021)."
               label="2D Design"
               url="https://www.facebook.com/sparkarhub/portfolios/453897605624260"
             />
